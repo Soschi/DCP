@@ -58,16 +58,16 @@
 }
 
 :root {
-  --color-main-900: #00700C;
-  --color-main-800: #008925;
-  --color-main-700: #00A045;
-  --color-main-600: #00B66B;
+  --color-main-50: #002E1F;
+  --color-main-100: #004D36;
+  --color-main-200: #006A4C;
+  --color-main-300: #008E67;
+  --color-main-400: #00AB7D;
   --color-main-500: #00CB95;
-  --color-main-400: #32D88D;
-  --color-main-300: #64E392;
-  --color-main-200: #95EEA4;
-  --color-main-100: #C7F7C7;
-  --color-main-50:  #E8FDEA;
+  --color-main-600: #40D8AF;
+  --color-main-700: #7BE4C8;
+  --color-main-800: #C0F2E5;
+  --color-main-900:  #DDF8F1;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -103,16 +103,16 @@
 }
 
 .dark {
-  --color-main-900: #00700C;
-  --color-main-800: #008925;
-  --color-main-700: #00A045;
-  --color-main-600: #00B66B;
-  --color-main-500: #00CB95;
-  --color-main-400: #32D88D;
-  --color-main-300: #64E392;
-  --color-main-200: #95EEA4;
-  --color-main-100: #C7F7C7;
-  --color-main-50:  #E8FDEA;
+  --color-main-900: #002E1F;
+  --color-main-800: #004D36;
+  --color-main-700: #006A4C;
+  --color-main-600: #008E67;
+  --color-main-500: #00AB7D;
+  --color-main-400: #00CB95;
+  --color-main-300: #40D8AF;
+  --color-main-200: #7BE4C8;
+  --color-main-100: #C0F2E5;
+  --color-main-50:  #DDF8F1;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -127,7 +127,7 @@
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);

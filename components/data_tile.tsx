@@ -1,4 +1,5 @@
 
+import { Trash2 } from "lucide-react";
 import { CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from "recharts";
 
 const data = [
@@ -48,13 +49,21 @@ type TileProps = {
 
 export default function DataTile({ title, actions, children }: TileProps) {
   return (
-    <div className="bg-main-900 p-4 rounded-xl shadow-md w-full h-full flex flex-col">
+    <div className="bg-main-700 p-4 rounded-xl shadow-md h-full flex flex-col basis-1/4">
       <div className="flex items-center justify-between mb-3 w-full">
-        <h2 className="text-lg font-semibold text-black text-center w-full">{title}</h2>
-        {actions && <div>{actions}</div>}
+        <h2 className="text-lg font-semibold text-main-50 w-full order-1 pl-[30]">{title}</h2>
+        <div className="order-2 pr-[30]">
+          <div className="hover:bg-destructive rounded-sm">
+            <a>
+              <Trash2 />
+            </a>
+          </div>
+          {actions && <div>{actions}</div>}
+        </div>
+        
       </div>
 
-      <div className="flex-1 bg-white">
+      <div className=" bg-white rounded-sm">
         {children}
         <LineChart width={500} height={500} responsive data={data}>
             <CartesianGrid/>
@@ -62,7 +71,7 @@ export default function DataTile({ title, actions, children }: TileProps) {
             <XAxis dataKey="name"/>
             <YAxis/>
             <Legend/>
-      </LineChart>
+        </LineChart>
       </div>
     </div>
   );
